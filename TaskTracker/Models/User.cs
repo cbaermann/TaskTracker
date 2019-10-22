@@ -11,6 +11,8 @@ namespace TaskTracker.Models
     {
         [Key]
         public int UserId {get;set;}
+
+        public List<UserTask> UserTasks {get;set;}
         [Required]
         [MinLength(2, ErrorMessage="First Name must be at least 2 characters!")]
         public string FirstName {get;set;}
